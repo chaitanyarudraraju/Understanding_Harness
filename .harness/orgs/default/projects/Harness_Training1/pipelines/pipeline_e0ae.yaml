@@ -1,0 +1,19 @@
+pipeline:
+  stages:
+    - steps:
+        - name: git1
+          id: git1
+          build:
+            uses: gitCloneStep
+            with:
+              connector: Github_Connector_Training1
+              repo_name: https://github.com/chaitanyarudraraju/Understanding_Harness
+              build:
+                target: Git Branch
+                branch: master
+              pr_merge_strategy: Source Branch
+              depth: "50"
+              lfs_enabled: false
+              debug: false
+              fetch_tags: false
+              insecure: false
