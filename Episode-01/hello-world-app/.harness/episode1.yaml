@@ -1,0 +1,6 @@
+service:
+  name: service_kubernetes_eb43
+  identifier: service_kubernetes_eb43
+  serviceDefinition:
+    type: Kubernetes
+    spec: {}
